@@ -1,0 +1,24 @@
+input_features:
+    -
+        name: tokens
+        type: text
+        level: word
+        encoder: rnn
+        cell_type: lstm
+        bidirectional: true
+        num_layers: 2
+        reduce_output: null
+        preprocessing:
+          word_format: space
+
+output_features:
+    -
+        name: intent
+        type: category
+        reduce_input: sum
+        num_fc_layers: 1
+        fc_size: 64
+    -
+        name: slots
+        type: sequence
+        decoder: tagger
