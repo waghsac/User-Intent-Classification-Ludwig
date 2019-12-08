@@ -9,7 +9,7 @@ In order to achieve this, understanding the science behind why is a user searchi
 
 <b> Why Ludwig? </b>
 
-
+![alt text](https://github.com/waghsac/User-Intent-Classification-Ludwig/blob/master/03.PNG)
 
 
 
